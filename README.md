@@ -12,7 +12,7 @@ exposing sensitive data to the wrong people.
 The data is being broken down by local authority and sanitised into
 S3 with appropriate data for the relevant consumers.
 
-The access is controlled by a flask app running on PaaS using
+The access is controlled by a flask app running in Lambda using
 AWS Cognito to authenticate users. We import lists of users
 supplied by MHCLG into Cognito. Users are notified by email and
 required to supply a 2FA code via SMS.
@@ -115,7 +115,7 @@ Run linters and then pytests
 
 ### make zip
 
-Build the distributable zip file for shipping to PaaS
+Build the distributable zip file for shipping to Lambda
 
 
 ## End to end testing 
